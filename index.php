@@ -19,13 +19,16 @@
   </head>
   <body>
     <?php echo "<h1>Guess My Number!</h1>"; ?>
-    <?php echo "<p>Welcome to the Guess My Number game! Please input your guess below:</p>"; ?>
-    <!-- Form for user input -->
-    <form action="./check.php" method="post" target="result">
-      <label for="guess">Guess a Number Between 1 and 6:</label>
-      <input type="number" step="1" id="user-guess" name="user-guess" min="1" max="6" placeholder="Your Guess..."><br><br>
-      <input type="submit" value="Check">
-    </form>
+    <!-- Div for style -->
+    <div id="green">
+      <?php echo "<p>Welcome to the Guess My Number game! Please input your guess below:</p>"; ?>
+      <!-- Form for user input -->
+      <form action="./check.php" method="post" target="result">
+        <label for="guess">Guess a Number Between 1 and 6:</label>
+        <input type="number" step="1" id="user-guess" name="user-guess" min="1" max="6" placeholder="Your Guess..."><br><br>
+        <input type="submit" value="Check">
+      </form>
+    </div>
     <iframe id="result" name="result"></iframe>
   </body>
 </html>
