@@ -23,7 +23,7 @@
     <!-- Form for user input -->
     <form action="./check.php" method="post" target="result">
       <label for="guess">Guess a Number Between 1 and 6:</label>
-      <input type="number" step="1" name="user-guess" min="1" max="6" placeholder="Your Guess..."><br><br>
+      <input type="number" step="1" id="user-guess" name="user-guess" min="1" max="6" placeholder="Your Guess..."><br><br>
       <input type="submit" value="Check">
     </form>
     <iframe id="result" name="result"></iframe>
